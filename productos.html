@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app-body">
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">Mi App SENA</div>
+            <nav>
+                <a class="nav-link" href="dashboard.html">Inicio</a>
+                <a class="nav-link" href="perfil.html">Perfil</a>
+                <a class="nav-link active" href="productos.html">Productos</a>
+            </nav>
+            <div class="sidebar-foot">
+                <div class="user-info">
+                    <span id="user-avatar" class="avatar">N</span>
+                    <div>
+                        <strong data-user-name>Usuario</strong>
+                        <small data-user-email>-</small>
+                    </div>
+                </div>
+                <button type="button" id="btn-logout" class="btn-logout">Cerrar sesión</button>
+            </div>
+        </aside>
+
+        <div class="content">
+            <header class="content-header">
+                <div>
+                    <p class="eyebrow">GESTIÓN</p>
+                    <h1>Listado de Productos</h1>
+                </div>
+            </header>
+
+            <section class="card">
+                <h2>Catálogo de Demostración</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Sistema ERP Aroma</td>
+                            <td>Activo</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Módulo Supabase Auth</td>
+                            <td>Completado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/guard.js"></script>
+</body>
+</html>

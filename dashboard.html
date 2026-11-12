@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app-shell">
+    <div class="topbar">
+        <div class="socials">
+            <span class="social-pill">f</span>
+            <span class="social-pill">Y</span>
+            <span class="social-pill">▶</span>
+        </div>
+        <div class="socials">
+            <span>Facebook</span>
+            <span>YouTube</span>
+            <span>Booking.com</span>
+        </div>
+    </div>
+
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div>
+                <div class="sidebar-brand">Mi App</div>
+                <nav class="sidebar-nav">
+                    <a class="nav-link active" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Perfil</a>
+                </nav>
+            </div>
+
+            <div class="user-card">
+                <div class="user-info">
+                    <span class="avatar" id="user-avatar">N</span>
+                    <div class="user-meta">
+                        <span class="user-name" id="user-name">Ney</span>
+                        <span class="user-email" id="user-email">ney@gmail.com</span>
+                    </div>
+                </div>
+                <button type="button" class="btn-logout" id="btn-logout">Cerrar sesión</button>
+            </div>
+        </aside>
+
+        <main class="content-panel">
+            <div class="main-card">
+                <div class="eyebrow">Panel de ejemplo</div>
+                <h2>Hola, <span id="welcome-name">Ney</span></h2>
+
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="stat-label">Sesión</div>
+                        <div class="stat-value green">Activa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Módulo</div>
+                        <div class="stat-value blue">Demo</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Páginas</div>
+                        <div class="stat-value purple">2</div>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Resumen</h3>
+                    <p>Esta es una pantalla de muestra después del login. En tu proyecto puedes poner aquí listados, métricas o accesos rápidos.</p>
+                    <ul>
+                        <li>Navega a Perfil para ver datos del usuario.</li>
+                        <li>Ambas páginas están protegidas: sin sesión vuelves al login.</li>
+                        <li>Cambia textos y menús según tu aplicación.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
